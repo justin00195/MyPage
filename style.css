@@ -1,0 +1,278 @@
+/* Hero Section - 讓首頁更有設計感 */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f0f0f0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* 讓 AI Engineer 有打字動畫 */
+.typing-effect::after {
+    content: "|";
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* 高亮 AI Engineer */
+.highlight {
+    color: inherit;
+    font-weight: bold;
+}
+
+/* CTA 按鈕 */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+header {
+    background-color: #222a75;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.intro {
+    padding: 50px;
+}
+
+
+footer {
+    background-color: #222a75;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* 不固定在視窗，只會在頁面底部 */
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contact-form button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.about, .education, .skills, .work-experience ,.interests {
+    width: 800px; /* 設定最大寬度 */
+    margin: 30px auto; /* 讓區塊自動置中 */
+    padding: 20px;
+    background: white; /* 設定背景顏色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加陰影讓區塊更有層次 */
+    border-radius: 10px; /* 圓角讓畫面更平滑 */
+    text-align: left;
+}
+
+.job h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.about h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+
+.interests h3 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px; /* 確保圖表區塊有足夠高度 */
+    margin: 20px auto;
+    position: relative;
+}
+
+.contact-info, .contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: blue;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: darkblue;
+}
+
+/* 隱藏成功訊息 */
+.hidden {
+    display: none;
+    color: green;
+    margin-top: 10px;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 主要內容區域（確保它推動 footer 向下） */
+main {
+    flex: 1;
+}
+

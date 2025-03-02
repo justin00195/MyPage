@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Ching Hao</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>You can reach me through the following channels:</p>
+        <ul>
+            <li>Email: <a href="mailto:changjustin1999@gmail.com">changjustin1999@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/changjustin1999/" target="_blank">linkedin/changjustin1999</a></li>
+            <li>GitHub: <a href="https://github.com/justin00195" target="_blank">justin00195</a></li>
+        </ul>
+    </section>
+
+    <section class="contact-form">
+        <h2>Or Send Me a Message</h2>
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-message" class="hidden">Thank you! Your message has been sent.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ching Hao. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
